@@ -6,6 +6,7 @@ look at this guide when making a rar file using the gui for linux to make sure y
 https://www.quora.com/How-do-I-highly-compress-files-using-winrar
 
 make sure the dirctory size is  1MB to it can be comepress vary small
+![example1](https://github.com/TigerClips1/ps4linux_disk_image_maker/blob/master/example.png)
 
 you also have to use a vm becuse how i put the code i made it where dd command clone the / for you ps4linux machine
 
