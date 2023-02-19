@@ -38,10 +38,10 @@ def disks(): #function to keep thing nice
     os.system('sudo dd if=/dev/null of=/home/$USER/Documents/linux.img bs=1073741824 seek=100 status=progress') #start making the diskimage file 
     os.system("sudo losetup /dev/loop5 /home/$USER/Documents/linux.img") #setuop the diskimage file
     os.system("sudo mkfs.ext2 /dev/loop5") #Create ext2 filesystem on loop device
-    os.system ("sudo mkdir /media/loop5") #make the directory for the losetup
-    os.system ("sudo mount /dev/loop5 /media/loop5")
+    os.system ("sudo mkdir /newroot") #make the directory for the losetup
+    os.system ("sudo mount /dev/loop5 /newroot")
     os.system ('sudo tar -cvf ps4linux.tar.xz --exclude=/home/$USER/Documents/ps4linux.tar.xz --exclude=/var/cache --exclude /home/$USER/Documents/linux.img  --one-file-system / -I "xz -9" + ') #comepile all files in the root directory to tar.xz to we can run the diskimage file on the ps4
-    os.system ("cd /media/loop5") #change directory to the diskimage protation
+    os.system ("cd /newroot") #change directory to the diskimage protation
     os.system('sudo tar -xvf /home/$USER/Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
     os.system("cd /home/$USER/Documents") #change directory back to /home/$USER/Documents
     os.system("sudo rm -rf * && history -c") #remove all files in the /home/$USER/Documents/and clear history in the termnal
