@@ -34,10 +34,21 @@ os.system('cd /home/$USER/Documents') #change directory to that << to we can kee
 
 def disks(): #function to keep thing nice
     print("this will create a 100G diskimage file\n") #print text on the screen
-    os.system('sudo dd if=/dev/vda1 of=/home/$USER/Documents/linux.img bs=1G count=100 sync status=progress') #start making the diskimage file 
+    print("plese close out of everything only thing need to be open is the terminal")
+    os.system('sudo dd if=/dev/null of=/home/$USER/Documents/linux.img bs=1073741824 seek=100 status=progress') #start making the diskimage file 
+    os.system("sudo losetup /dev/loop5 /home/$USER/Documents/linux.img") #setuop the diskimage file
+    os.system("sudo mkfs.ext2 /dev/loop5") #Create ext2 filesystem on loop device
+    os.system ("sudo mkdir /media/loop5") #make the directory for the losetup
+    os.system ("sudo mount /dev/loop5 /media/loop5")
+    os.system ('sudo tar -cvf ps4linux.tar.xz --exclude=/home/$USER/Documents/ps4linux.tar.xz --exclude=/var/cache --exclude /home/$USER/Documents/linux.img  --one-file-system / -I "xz -9" + ') #comepile all files in the root directory to tar.xz to we can run the diskimage file on the ps4
+    os.system ("cd /media/loop5") #change directory to the diskimage protation
+    os.system('sudo tar -xvf /home/$USER/Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
+    os.system("cd /home/$USER/Documents") #change directory back to /home/$USER/Documents
+    os.system("sudo rm -rf * && history -c") #remove all files in the /home/$USER/Documents/and clear history in the termnal
     os.system('wget https://www.rarlab.com/rar/winrar-x64-621b1.exe')#then download winerar to you can comepress it using a gui evorment
     os.system('sudo mv winrar-x64-621b1.exe winrar.exe') #rename the file to wine can read it a bit easy
     os.system("sudo wine winrar.exe") #excute the .exe file to we can install winrar
+
     
 ubuntu_debian() #calling the function
 arch()  # calling the arch function
