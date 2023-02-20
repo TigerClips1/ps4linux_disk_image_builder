@@ -4,24 +4,22 @@ for this script to work you need to get you sfalsh fellow this guide https://flo
 
 for you to get your hdd keys you need python2 and run pip2 install -r requirements.txt
 
-then  then move the sflash0 to /home/$USER/Documents    then also move hdd_script.py to /home/$USER/Documents and also make sure you not root 
+then move the sflash0 to /home/$USER/Documents    then also move the hdd_script.py to /home/$USER/Documents and also make sure you not root 
 
 then run python2 hdd_script.py sflash0
-you need to mount the ps4 hdd https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux and you need to take note of the drive  directory then change the line in the python script of ps4 hdd directory that your pc set here a video that explain it  https://www.youtube.com/watch?v=xcPEjxGHoE4 video may be old but it work onece you dump your hdd keys with zecoxao hdd_script.py 
+you need to mount the ps4 hdd fellow this guide https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux and you need to take note of the drive  directory then change the line in the python script of ps4 hdd directory that your pc set here is  a video that explains it better  https://www.youtube.com/watch?v=xcPEjxGHoE4 video may be old but it work onece you dump your hdd keys with zecoxao hdd_script.py 
  
 then rename the key.bin to eap_hdd_key.bin
 
-then take out your ps4 hdd and plug it in to your pc make sure you buy this to https://www.amazon.com/StarTech-com-SATA-USB-Cable-USB3S2SAT3CB/dp/B00HJZJI84/ref=sr_1_8?c=ts&keywords=SATA+Cables&qid=1676933902&s=pc&sr=1-8&ts_id=3015394011 by that cable then you can connect your ps4 hdd to the pc then run my script in the 
-vm and make sure you call the ps4 hdd in the vm then install ps4 drivers to the os in vm then run python3 ps4linux_diskimage_create.py if you have the ps4 hdd connect to yourr pc then it will create a diskimage file in the ps4hdd from the pc without being in the ps4
-for you to run the os you need ps4 drivers
+then take out your ps4 hdd and plug it in to your pc make sure you buy this to https://www.amazon.com/StarTech-com-SATA-USB-Cable-USB3S2SAT3CB/dp/B00HJZJI84/ref=sr_1_8?c=ts&keywords=SATA+Cables&qid=1676933902&s=pc&sr=1-8&ts_id=3015394011 buy that cable then you can connect your ps4 hdd to your pc then run my script in the 
+vm and make sure you call the ps4 hdd in the vm then install ps4 drivers to the os in vm then run python3 ps4linux_diskimage_create.py if you have the ps4 hdd connect to yourr pc then it will create a diskimage file in the ps4hdd from your pc without being in the ps4
+for you to run the os you need to have ps4 drivers
 
 look at this guide when making a rar file using the gui for linux to make sure you check the right box
 https://www.quora.com/How-do-I-highly-compress-files-using-winrar
 
 make sure the dirctory size is  1MB to it can be comepress vary small
 ![example1](https://github.com/TigerClips1/ps4linux_disk_image_maker/blob/master/example.png)
-
-you also have to use a vm becuse how i put the code i made it where dd command clone the / for you ps4linux machine
 
 but there is image that show you how to set it up
 
@@ -45,11 +43,10 @@ fedora 36 drivers by noob404 can be found here https://github.com/noob404yt/ps4-
 
 arch drivers by nazky can be found here https://github.com/Hakkuraifu/PS4Linux-ArchDrivers
 
-that's it there may be alot of spelling error in here but i will fix that  in a later update
+that's it there may be alot of spelling errors in here but i will fix that  in a later update
 
 also for to get bluetooth to work /wifi for some ps4 downlaods this kernel to fix that https://ps4linux.com/s/rxzab
 
 Thankes for reading and hope this help make ps4 hdd .img file
 this is still a work in progress so you msay need to test any error you get in the script let me know to i can fix it.
 this is really the only way i can think  when making hdd .img file
-
