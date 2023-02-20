@@ -1,10 +1,18 @@
 I am not responeable for any damage you did to your disk
+
 for this script to work you need to get you sfalsh fellow this guide https://florinsdistortedvision.github.io/orbisunjailed/sflash-backup/
+
 for you to get your hdd keys you need python2 and run pip2 install -r requirements.txt
+
 then  then move the sflash0 to /home/$USER/Documents    then also move hdd_script.py to /home/$USER/Documents and also make sure you not root 
+
 then run python2 hdd_script.py sflash0
+you need to mount the ps4 hdd https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux and you need to take note of the drive  directory then change the line in the python script of ps4 hdd directory that your pc set
+ 
 then rename the key.bin to eap_hdd_key.bin
-then run my ps4linux_diskimage_create.py then it will work
+
+then take out your ps4 hdd and plug it in to your pc make sure you buy this to https://www.amazon.com/StarTech-com-SATA-USB-Cable-USB3S2SAT3CB/dp/B00HJZJI84/ref=sr_1_8?c=ts&keywords=SATA+Cables&qid=1676933902&s=pc&sr=1-8&ts_id=3015394011 by that cable then you can connect your ps4 hdd to the pc then run my script in the 
+vm and make sure you call the ps4 hdd in the vm then install ps4 drivers to the os in vm then run python3 ps4linux_diskimage_create.py if you have the ps4 hdd connect to yourr pc then it will create a diskimage file in the ps4hdd from the pc without being in the ps4
 for you to run the os you need ps4 drivers
 
 look at this guide when making a rar file using the gui for linux to make sure you check the right box
@@ -30,8 +38,6 @@ python3 is what require for you to run my python script
 
 4. install wine for ubuntu run ubuntu_wine_requirement.sh it will install wine for ubuntu 22.04
 
-5. after that run python3 ps4linux_diskimage_create.py
-then let it do it thing then you will see a .img file and winrar 
 
 ps4 drivers for ubuntu  by noob 404 can be found here https://github.com/noob404yt/ps4-pop-os-drivers
 
@@ -44,6 +50,6 @@ that's it there may be alot of spelling error in here but i will fix that  in a 
 also for to get bluetooth to work /wifi for some ps4 downlaods this kernel to fix that https://ps4linux.com/s/rxzab
 
 Thankes for reading and hope this help make ps4 hdd .img file
-
+this is still a work in progress so you msay need to test any error you get in the script let me know to i can fix it.
 this is really the only way i can think  when making hdd .img file
 
