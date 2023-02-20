@@ -1,5 +1,10 @@
 I am not responeable for any damage you did to your disk
-
+for this script to work you need to get you sfalsh fellow this guide https://florinsdistortedvision.github.io/orbisunjailed/sflash-backup/
+for you to get your hdd keys you need python2 and run pip2 install -r requirements.txt
+then  then move the sflash0 to /home/$USER/Documents    then also move hdd_script.py to /home/$USER/Documents and also make sure you not root 
+then run python2 hdd_script.py sflash0
+then rename the key.bin to eap_hdd_key.bin
+then run my ps4linux_diskimage_create.py then it will work
 for you to run the os you need ps4 drivers
 
 look at this guide when making a rar file using the gui for linux to make sure you check the right box

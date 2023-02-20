@@ -35,6 +35,9 @@ os.system('cd /home/$USER/Documents') #change directory to that << to we can kee
 def disks(): #function to keep thing nice
     print("this will create a 100G diskimage file\n") #print text on the screen
     print("plese close out of everything only thing need to be open is the terminal")
+    os.system("sudo cryptsetup -d /home/$USER/Documents/eap_hdd_key.bin --cipher=aes-xts-plain64 -s 256 --offset=0 --skip=111669149696 create ps4hdd /dev/sd?27")
+    os.system("sudo mkdir /ps4hdd")
+    os.system("mount -t ufs -o ufstype=ufs2 /dev/mapper/ps4hdd /ps4hdd")
     os.system('sudo dd if=/dev/null of=/home/$USER/Documents/linux.img bs=1073741824 seek=100 status=progress') #start making the diskimage file 
     os.system("sudo losetup /dev/loop5 /home/$USER/Documents/linux.img") #setuop the diskimage file
     os.system("sudo mkfs.ext2 /dev/loop5") #Create ext2 filesystem on loop device
