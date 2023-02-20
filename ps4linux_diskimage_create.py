@@ -12,7 +12,7 @@ promo = "ps4linux.com" #promotion variable string
 
 #ubuntu/debian
 def ubuntu_debian(): #function to keep thing nice
-        rar = os.popen('sudo apt-get update && sudo apt-get install unrar rar wget') #command to install the requirements for ubuntu/debian abse distro
+        rar = os.popen('sudo apt-get update && sudo apt-get install unrar rar wget cryptmount') #command to install the requirements for ubuntu/debian abse distro
         output = rar.readlines() #output to see if the commands ruturn with no error
         print (error) #print the error if you try to run that commands say for fedora base distro
 
@@ -23,12 +23,9 @@ def arch(): #function to keep thing nice
     os.system(' git clone https://aur.archlinux.org/yay.git') #clone aur helper repo
     os.system('cd yay' ) # change directory to aur helper
     os.system('makepkg -si') #this bulid the aur helper
-    yay = os.popen('yay -Syyu && yay -S rar unrar') #this install rar and unrar for people who want to use the command line
+    yay = os.popen('yay -Syyu && yay -S rar unrar cryptmount') #this install rar and unrar for people who want to use the command line
     output2 = yay.readlines() #output to see if there pacman but if you not on an arch base distro then it will give you an error
     print(error3) #print the error on the screen
-    
-#disk image file creater reminder
-print("please use a vm like qmeu or vitrualbox those 2 vm client is suported \n") #print text on your screen
 
 os.system('cd /home/$USER/Documents') #change directory to that << to we can keep thing nice
 
@@ -38,11 +35,11 @@ def disks(): #function to keep thing nice
     os.system("sudo cryptsetup -d /home/$USER/Documents/eap_hdd_key.bin --cipher=aes-xts-plain64 -s 256 --offset=0 --skip=111669149696 create ps4hdd /dev/sda27") #setup ps4 HDD
     os.system("sudo mkdir /ps4hdd") #make the directory for the ps4hdd
     os.system("mount -t ufs -o ufstype=ufs2 /dev/mapper/ps4hdd /ps4hdd") #mount the ps4 drive from pc to it can work
-    os.system('sudo dd if=/dev/null of=/home/$USER/Documents/linux.img bs=1073741824 seek=100 status=progress') #start making the diskimage file 
-    os.system("sudo losetup /dev/loop5 /home/$USER/Documents/linux.img") #setuop the diskimage file
+    os.system('sudo dd if=/dev/null of=/ps4hdd/home/linux.img bs=1073741824 seek=100 status=progress') #start making the diskimage file 
+    os.system("sudo losetup /dev/loop5 /ps4hdd/home/linux.img") #setuop the diskimage file
     os.system("sudo mkfs.ext2 /dev/loop5") #Create ext2 filesystem on loop device
     os.system ("sudo mount /dev/loop5 /newroot")
-    os.system ('sudo tar -cvf ps4linux.tar.xz --exclude=/home/$USER/Documents/ps4linux.tar.xz --exclude=/var/cache --exclude /home/$USER/Documents/linux.img  --one-file-system / -I "xz -9" + ') #comepile all files in the root directory to tar.xz to we can run the diskimage file on the ps4
+    os.system ('sudo tar -cvf ps4linux.tar.xz --exclude=/home/$USER/Documents/ps4linux.tar.xz --exclude=/var/cache --one-file-system / -I "xz -9" + ') #comepile all files in the root directory to tar.xz to we can run the diskimage file on the ps4
     os.system ("cd /newroot") #change directory to the diskimage protation
     os.system('sudo tar -xvf /home/$USER/Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
     os.system("cd /home/$USER/Documents") #change directory back to /home/$USER/Documents
@@ -51,7 +48,6 @@ def disks(): #function to keep thing nice
     os.system('sudo mv winrar-x64-621b1.exe winrar.exe') #rename the file to wine can read it a bit easy
     os.system("sudo wine winrar.exe") #excute the .exe file to we can install winrar
 
-    
 ubuntu_debian() #calling the function
 arch()  # calling the arch function
 disks() #calling the disk function
