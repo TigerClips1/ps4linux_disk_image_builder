@@ -7,7 +7,7 @@ for you to get your hdd keys you need python2 and run pip2 install -r requiremen
 then  then move the sflash0 to /home/$USER/Documents    then also move hdd_script.py to /home/$USER/Documents and also make sure you not root 
 
 then run python2 hdd_script.py sflash0
-you need to mount the ps4 hdd https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux and you need to take note of the drive  directory then change the line in the python script of ps4 hdd directory that your pc set
+you need to mount the ps4 hdd https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux and you need to take note of the drive  directory then change the line in the python script of ps4 hdd directory that your pc set here a video that explain it  https://www.youtube.com/watch?v=xcPEjxGHoE4 video may be old but it work onece you dump your hdd keys with zecoxao hdd_script.py 
  
 then rename the key.bin to eap_hdd_key.bin
 
