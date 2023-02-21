@@ -13,7 +13,7 @@ path2 = "/home/xxxxx/Documents/yay"
 path3 = "/newroot"
 #ubuntu/debian
 def ubuntu_debian(): #function to keep thing nice
-        rar = os.popen('sudo apt-get update && sudo apt-get install unrar rar wget cryptmount') #command to install the requirements for ubuntu/debian abse distro
+        rar = os.popen('sudo apt-get update && sudo apt-get install unrar rar wget cryptmount wget') #command to install the requirements for ubuntu/debian abse distro
         output = rar.readlines() #output to see if the commands ruturn with no error
         print (error) #print the error if you try to run that commands say for fedora base distro
 
@@ -21,7 +21,7 @@ def ubuntu_debian(): #function to keep thing nice
 #arch
 def arch(): #function to keep thing nice
     os.chdir(path)#change directory to that << to we can keep thing nice
-    os.system('sudo pacman -S git wget wine wine-mono wine-gecko') #this will install the requirement for arch to run this script
+    os.system('sudo pacman -S git wget wine wine-mono wine-gecko wget') #this will install the requirement for arch to run this script
     os.chdir(path)
     os.system(' git clone https://aur.archlinux.org/yay.git') #clone aur helper repo
     os.chdir(path2 ) # change directory to aur helper
