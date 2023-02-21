@@ -19,6 +19,7 @@ def ubuntu_debian(): #function to keep thing nice
 
 #arch
 def arch(): #function to keep thing nice
+    os.system('cd /home/$USER/Documents') #change directory to that << to we can keep thing nice
     os.system('sudo pacman -S git wget wine wine-mono wine-gecko') #this will install the requirement for arch to run this script
     os.system(' git clone https://aur.archlinux.org/yay.git') #clone aur helper repo
     os.system('cd yay' ) # change directory to aur helper
@@ -27,9 +28,9 @@ def arch(): #function to keep thing nice
     output2 = yay.readlines() #output to see if there pacman but if you not on an arch base distro then it will give you an error
     print(error3) #print the error on the screen
 
-os.system('cd /home/$USER/Documents') #change directory to that << to we can keep thing nice
 
 def disks(): #function to keep thing nice
+    os.system('cd /home/$USER/Documents') #change directory to that << to we can keep thing nice
     print("this will create a 100G diskimage file\n") #print text on the screen
     print("plese close out of everything only thing need to be open is the terminal")
     os.system("sudo cryptsetup -d /home/$USER/Documents/eap_hdd_key.bin --cipher=aes-xts-plain64 -s 256 --offset=0 --skip=111669149696 create ps4hdd /dev/sda27") #setup ps4 HDD
