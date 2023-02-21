@@ -44,8 +44,10 @@ def disks(): #function to keep thing nice
     os.system ('sudo mount /dev/loop5 /newroot')
     os.system ('sudo tar -cvf ps4linux.tar.xz --exclude=/home/xxxxx/Documents/ps4linux.tar.xz --exclude=/var/cache --one-file-system / -I "xz -9" + ') #comepile all files in the root directory to tar.xz to we can run the diskimage file on the ps4
     os.chdir (path3) #change directory to the diskimage protation
-    os.system('sudo tar -xvf /home//Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
+    os.system('sudo tar -xvf /home/xxxx/Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
+    os.chdir (path)
     os.system('sudo rm -rf *')
+    os.chdir (path)
     os.system('wget https://www.rarlab.com/rar/winrar-x64-621b1.exe')#then download winerar to you can comepress it using a gui evorment
     os.system('sudo mv winrar-x64-621b1.exe winrar.exe') #rename the file to wine can read it a bit easy
     os.system("sudo wine winrar.exe") #excute the .exe file to we can install winrar
