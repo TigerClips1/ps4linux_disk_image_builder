@@ -45,7 +45,7 @@ arch drivers by nazky can be found here https://github.com/Hakkuraifu/PS4Linux-A
 
 that's it there may be alot of spelling errors in here but i will fix that  in a later update
 
-also for to get bluetooth to work /wifi for some ps4 downlaods this kernel to fix that https://ps4linux.com/s/rxzab
+also for  you to get bluetooth to work /wifi for some ps4 downlaods this kernel to fix that https://ps4linux.com/s/rxzab
 
 Thankes for reading and hope this help make ps4 hdd .img file
 
@@ -55,5 +55,5 @@ if you have any error you get in the script let me know to i can fix it.
 
 this is really the only way i can think  when making hdd .img file from your pc without being in the ps4
 
-TODO add input to you can input aby space diskimage
+TODO add input to you can input  space diskimage file from the python script
 fix spelling error in the commet
