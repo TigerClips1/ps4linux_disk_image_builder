@@ -11,6 +11,8 @@ you need to mount the ps4 hdd fellow this guide https://www.psdevwiki.com/ps4/Mo
  
 then rename the key.bin to eap_hdd_key.bin
 
+now in the ps4linux_diskimage_create.py you need to remove the xxx and add your linux user name for the script to work
+
 then take out your ps4 hdd and plug it in to your pc make sure you buy this to https://www.amazon.com/StarTech-com-SATA-USB-Cable-USB3S2SAT3CB/dp/B00HJZJI84/ref=sr_1_8?c=ts&keywords=SATA+Cables&qid=1676933902&s=pc&sr=1-8&ts_id=3015394011 buy that cable then you can connect your ps4 hdd to your pc then run my script in the 
 vm and make sure you call the ps4 hdd in the vm then install ps4 drivers to the os in vm then run python3 ps4linux_diskimage_create.py if you have the ps4 hdd connect to yourr pc then it will create a diskimage file in the ps4hdd from your pc without being in the ps4
 for you to run the os you need to have ps4 drivers
