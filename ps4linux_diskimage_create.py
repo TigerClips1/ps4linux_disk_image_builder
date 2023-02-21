@@ -23,7 +23,7 @@ def arch(): #function to keep thing nice
     os.system(' git clone https://aur.archlinux.org/yay.git') #clone aur helper repo
     os.system('cd yay' ) # change directory to aur helper
     os.system('makepkg -si') #this bulid the aur helper
-    yay = os.popen('yay -Syyu && yay -S rar unrar cryptmount') #this install rar and unrar for people who want to use the command line
+    yay = os.popen('yay -S rar unrar cryptmount') #this install rar and unrar for people who want to use the command line
     output2 = yay.readlines() #output to see if there pacman but if you not on an arch base distro then it will give you an error
     print(error3) #print the error on the screen
 
@@ -43,7 +43,6 @@ def disks(): #function to keep thing nice
     os.system ("cd /newroot") #change directory to the diskimage protation
     os.system('sudo tar -xvf /home/$USER/Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
     os.system("cd /home/$USER/Documents") #change directory back to /home/$USER/Documents
-    os.system("sudo rm -rf * && history -c") #remove all files in the /home/$USER/Documents/and clear history in the termnal
     os.system('wget https://www.rarlab.com/rar/winrar-x64-621b1.exe')#then download winerar to you can comepress it using a gui evorment
     os.system('sudo mv winrar-x64-621b1.exe winrar.exe') #rename the file to wine can read it a bit easy
     os.system("sudo wine winrar.exe") #excute the .exe file to we can install winrar
