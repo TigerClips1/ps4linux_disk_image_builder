@@ -59,3 +59,6 @@ this is really the only way i can think  when making hdd .img file from your pc 
 
 TODO add input to you can input  space diskimage file from the python script
 fix spelling error in the comments
+
+
+⚠️ Warning this is still in dev and may need to test by other people  because i don't have the tool to take out the ps4 hdd or the seta to usb so if it work please let me know at  TigerClips 2#3277 on discord  ⚠️
