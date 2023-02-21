@@ -8,8 +8,8 @@ error2 = "Error you don't have an fedora base distro" #error 2 variable string
 error3 = "Error you don't have an arch base distro" #error3 variable string
 credit = "scripts by TigerClips 2" #credit variable string
 promo = "ps4linux.com" #promotion variable string
-path = "/home/xxxxx/Documents"
-path2 = "/home/xxxxx/Documents"
+path = "/home/linux/Documents"
+path2 = "/home/linux/Documents"
 #ubuntu/debian
 def ubuntu_debian(): #function to keep thing nice
         rar = os.popen('sudo apt-get update && sudo apt-get install unrar rar wget cryptmount') #command to install the requirements for ubuntu/debian abse distro
@@ -33,7 +33,7 @@ def disks(): #function to keep thing nice
     os.chdir(path2)#change directory to that << to we can keep thing nice
     print("this will create a 100G diskimage file\n") #print text on the screen
     print("plese close out of everything only thing need to be open is the terminal")
-    os.system('sudo cryptsetup -d /home/xxxxx/Documents/eap_hdd_key.bin --cipher=aes-xts-plain64 -s 256 --offset=0 --skip=111669149696 create ps4hdd /dev/sda27') #setup ps4 HDD
+    os.system('sudo cryptsetup -d /home/linux/Documents/eap_hdd_key.bin --cipher=aes-xts-plain64 -s 256 --offset=0 --skip=111669149696 create ps4hdd /dev/sda27') #setup ps4 HDD
     os.system('sudo mkdir /ps4hdd') #make the directory for the ps4hdd
     os.system('sudo mount -t ufs -o ufstype=ufs2 /dev/mapper/ps4hdd /ps4hdd') #mount the ps4 drive from pc to it can work
     os.system('sudo dd if=/dev/null of=/ps4hdd/home/linux.img bs=1073741824 seek=100 status=progress') #start making the diskimage file 
@@ -42,8 +42,7 @@ def disks(): #function to keep thing nice
     os.system ('sudo mount /dev/loop5 /newroot')
     os.system ('sudo tar -cvf ps4linux.tar.xz --exclude=/home/linux/Documents/ps4linux.tar.xz --exclude=/var/cache --one-file-system / -I "xz -9" + ') #comepile all files in the root directory to tar.xz to we can run the diskimage file on the ps4
     os.system ('cd /newroot') #change directory to the diskimage protation
-    os.system('sudo tar -xvf /home/xxxxxx/Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
-    os.system('cd /home/xxxxx/Documents') #change directory back to /home/$USER/Documents
+    os.system('sudo tar -xvf /home//Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
     os.system('sudo rm -rf *')
     os.system('wget https://www.rarlab.com/rar/winrar-x64-621b1.exe')#then download winerar to you can comepress it using a gui evorment
     os.system('sudo mv winrar-x64-621b1.exe winrar.exe') #rename the file to wine can read it a bit easy
