@@ -56,4 +56,4 @@ if you have any error you get in the script let me know to i can fix it.
 this is really the only way i can think  when making hdd .img file from your pc without being in the ps4
 
 TODO add input to you can input  space diskimage file from the python script
-fix spelling error in the commet
+fix spelling error in the comments
