@@ -1,13 +1,13 @@
 I am not responeable for any damage you did to your disk
 
-for this script to work you need to get you sfalsh fellow this guide https://florinsdistortedvision.github.io/orbisunjailed/sflash-backup/
+for this script to work you need to get your sfalsh fellow this guide that show you how to get your sflash0 from ftp  https://florinsdistortedvision.github.io/orbisunjailed/sflash-backup/
 
 for you to get your hdd keys you need python2 and run pip2 install -r requirements.txt
 
 then move the sflash0 to /home/$USER/Documents    then also move the hdd_script.py to /home/$USER/Documents and also make sure you not root 
 
 then run python2 hdd_script.py sflash0
-you need to mount the ps4 hdd fellow this guide https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux and you need to take note of the drive  directory then change the line in the python script of ps4 hdd directory that your pc set here is  a video that explains it better  https://www.youtube.com/watch?v=xcPEjxGHoE4 video may be old but it work onece you dump your hdd keys with zecoxao hdd_script.py 
+you need to mount the ps4 hdd fellow this guide https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux and you need to take note of the drive  directory then change the line in the python script of ps4 hdd directory to /dev/xxx that your pc set here is  a video that explains it better  https://www.youtube.com/watch?v=xcPEjxGHoE4 video may be old but it work onece you dump your hdd keys with zecoxao hdd_script.py 
  
 then rename the key.bin to eap_hdd_key.bin
 
@@ -21,7 +21,7 @@ https://www.quora.com/How-do-I-highly-compress-files-using-winrar
 make sure the dirctory size is  1MB to it can be comepress vary small
 ![example1](https://github.com/TigerClips1/ps4linux_disk_image_maker/blob/master/example.png)
 
-but there is image that show you how to set it up
+but there is  a image that show you how to set it up
 
 ad check out ps4linux.com for the latest news about ps4linux
 
@@ -48,5 +48,12 @@ that's it there may be alot of spelling errors in here but i will fix that  in a
 also for to get bluetooth to work /wifi for some ps4 downlaods this kernel to fix that https://ps4linux.com/s/rxzab
 
 Thankes for reading and hope this help make ps4 hdd .img file
-this is still a work in progress so you msay need to test any error you get in the script let me know to i can fix it.
-this is really the only way i can think  when making hdd .img file
+
+this is still a work in progress so you may need to test it
+
+if you have any error you get in the script let me know to i can fix it.
+
+this is really the only way i can think  when making hdd .img file from your pc without being in the ps4
+
+TODO add input to you can input aby space diskimage
+fix spelling error in the commet
