@@ -93,6 +93,8 @@ def disks(): #function to keep thing nice
     os.system('sudo mv winrar-x64-621b1.exe winrar.exe') #rename the file to wine can read it a bit easy
     
     os.system("sudo wine winrar.exe") #excute the .exe file to we can install winrar
+    
+    os.system('sudo  umount /dev/loop5') #unmount loop5 to you can easly change the os in the /newroot
 
 ubuntu_debian() #calling the function
 

@@ -76,7 +76,8 @@ def disks(): #function to keep thing nice
     os.system("sudo mv winrar-x64-621.exe winrar.exe") #rename it to winrar.exe
     
     os.system("wine winrar.exe")   #excute the .exe file to we can install winrar
-
+    
+    os.system('sudo  umount /dev/loop5') #unmount loop5 to you can easly change the os in the /newroot
 
 disks() #call the function 
 
