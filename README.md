@@ -10,8 +10,7 @@ but for PS4Linux_DiskImage_maker_without_removeing_PS4HDD.py you just need an di
 
 I am not responeable for any damage you did to your disk 
 
-for this script to work you need to get your sfalsh fellow this guide that show you how to get your sflash0 from ftp  https://
-florinsdistortedvision.github.io/orbisunjailed/sflash-backup/
+for this script to work you need to get your sfalsh fellow this guide that show you how to get your sflash0 from ftp  https://florinsdistortedvision.github.io/orbisunjailed/sflash-backup/
 
 for you to get your hdd keys you need python2 and run pip2 install -r requirements.txt
 
