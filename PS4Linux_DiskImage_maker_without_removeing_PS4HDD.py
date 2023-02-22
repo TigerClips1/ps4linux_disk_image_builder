@@ -36,7 +36,7 @@ def disks(): #function to keep thing nice
     output = setup.readlines() #this will read and see you have the linux.img file
     
     print(error) #print an error if it can't find the linux.img
-    
+    os.system('sudo rm -rf /newroot') #this will remove the /newroot directory to when installing the os you want have your screen flashing
     os.system('sudo mkfs.ext2 /dev/loop5') #make filesystem to ext2
     
     os.system('sudo mkdir /newroot') #make a directory

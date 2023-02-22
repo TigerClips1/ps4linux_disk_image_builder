@@ -6,7 +6,7 @@ to remove the ps4hdd when running the script
 
 but for PS4Linux_DiskImage_maker_without_removeing_PS4HDD.py you just need an diskimage file your ps4 made for that  to work i will show a video down here  when i edit to it can be high res
 
-
+also all the ps4linux os that in tar.gz or tar.xz the size need to be 2.94G is the max for it can boot with my script anythong over it will not boot
 
 I am not responeable for any damage you did to your disk 
 
