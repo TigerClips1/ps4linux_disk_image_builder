@@ -2,19 +2,19 @@
 
 import os #this is the os mudule from cpython
 
-cmd1 = "sudo losetup /dev/loop5 /home/xxxx/linux.img" #this will excute the command
+cmd1 = "sudo losetup /dev/loop5 /home/xxxxx/linux.img" #this will excute the command
 
 error = "we can't find your linux.img make sure to move it from your ps4 oru usb in to  your home directory"#variable string that print an error on your screen
 
 error2 = " you don't have a tar.gz file or cant be found" #variable string that print an error on your screen
 
-path = "/home/xxxx/" #variable string
+path = "/home/xxxxxx/" #variable string
 
 path2 = '/newroot' #variable string
 
-cmd3 = 'sudo tar -xvf /home/xxxxx/Downloads/archv2.tar.xz' #variable string
+cmd3 = 'sudo tar -xvf /home/xxxxx/psxitarch.tar.xz' #variable string
 
-path3 = "/home/xxxxxx/Documents" #variable string
+path3 = "/home/xxxxxxx/Documents" #variable string
 
 error3 = "you don't have an arch base distro" #variable string
 
@@ -77,9 +77,10 @@ def disks(): #function to keep thing nice
     
     os.system("wine winrar.exe")   #excute the .exe file to we can install winrar
 
-print("DONE \n")
 
 disks() #call the function 
+
+print("DONE \n")
 
 print(credit) #print the credits on the screen
 
