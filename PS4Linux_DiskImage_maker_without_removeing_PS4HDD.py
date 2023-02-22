@@ -8,13 +8,13 @@ error = "we can't find your linux.img make sure to move it from your ps4 oru usb
 
 error2 = " you don't have a tar.gz file or cant be found" #variable string that print an error on your screen
 
-path = "/home/xxxxx/" #variable string
+path = "/home/xxxx/" #variable string
 
 path2 = '/newroot' #variable string
 
-cmd3 = 'sudo tar -xvf /home/xxxxx/xxxxx/xxxx.tar.xz' #variable string
+cmd3 = 'sudo tar -xvf /home/xxxxx/Downloads/archv2.tar.xz' #variable string
 
-path3 = "/home/xxxxx/Documents" #variable string
+path3 = "/home/xxxxxx/Documents" #variable string
 
 error3 = "you don't have an arch base distro" #variable string
 
