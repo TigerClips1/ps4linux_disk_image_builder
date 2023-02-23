@@ -26,7 +26,7 @@ make sure ps4 xplorer homebrew app is install by Lapy05575948 for you to do all 
 
 7. then move the diskimage i extract with apollo to /user/home   that what i did 
 
-also all the ps4linux os that in tar.gz or tar.xz the size need to be 5.74G is the max for it can boot with my script anythong over it will not boot
+also all the ps4linux os that in tar.gz or tar.xz the size need to be 5.74G is the max for it can boot with my script anything over it will not boot
 
 I am not responeable for any damage you did to your disk 
 
