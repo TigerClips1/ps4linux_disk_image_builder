@@ -1,20 +1,25 @@
 #!/bin/python
 
+username = input("Enter you linux User: ") #get input from user
+
+
+print(f"Make sure your diskimage file is in the /home/{username}/psxitarch.tar.xz or tar.gz\n") #print text on the screen
+
 import os #this is the os mudule from cpython
 
-cmd1 = "sudo losetup /dev/loop5 /home/xxxxx/linux.img" #this will excute the command
+cmd1 = f"sudo losetup /dev/loop5 /home/{username}/linux.img" #this will excute the command
 
 error = "we can't find your linux.img make sure to move it from your ps4 oru usb in to  your home directory"#variable string that print an error on your screen
 
 error2 = " you don't have a tar.gz file or cant be found" #variable string that print an error on your screen
 
-path = "/home/xxxxxx/" #variable string
+path = f"/home/{username}/" #variable string
 
 path2 = '/newroot' #variable string
 
-cmd3 = 'sudo tar -xvf /home/xxxxx/psxitarch.tar.xz' #variable string
+cmd3 = f'sudo tar -xvf /home/{username}/psxitarch.tar.xz' #variable string
 
-path3 = "/home/xxxxxxx/Documents" #variable string
+path3 = f"/home/{username}/Documents" #variable string
 
 error3 = "you don't have an arch base distro" #variable string
 
@@ -24,7 +29,7 @@ credit = "scripts by TigerClips 2 \n" #credit variable string
 
 promo = "ps4linux.com \n" #promotion variable string
 
-cmd4 = 'sudo tar -xvzf /home/xxxxx/psxitarch.tar.xx' #extrect tar.gz file
+cmd4 = f'sudo tar -xvzf /home/{username}/psxitarch.tar.gz' #extrect tar.gz file
 
 print("Installing\n")
 
