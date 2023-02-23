@@ -40,15 +40,13 @@ then run python2 hdd_script.py sflash0
 
 you need to mount the ps4 hdd fellow this guide https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux and you need to take note of 
 
-the drive  directory then change the line in the python script of ps4 hdd directory to /dev/xxx that your pc set here is  a 
-
 video that explains it better  https://www.youtube.com/watch?v=xcPEjxGHoE4 video may be old but it work onece you dump your hdd 
 
 keys with zecoxao hdd_script.py 
  
 then rename the key.bin to eap_hdd_key.bin
 
-now in the ps4linux_diskimage_create.py you need to remove the xxx and add your linux user name for the script to work
+now in the ps4linux_diskimage_create.py
 
 then take out your ps4 hdd and plug it in to your pc make sure you buy this to https://www.amazon.com/StarTech-com-SATA-USB-Cable-USB3S2SAT3CB/dp/B00HJZJI84/ref=sr_1_8?c=ts&keywords=SATA+Cables&qid=1676933902&s=pc&sr=1-8&ts_id=3015394011 buy that cable then you can connect your ps4 hdd to your pc then run my script in the 
 
