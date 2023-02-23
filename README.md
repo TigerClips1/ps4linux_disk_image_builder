@@ -4,9 +4,25 @@
 also for the ps4linux_diskimage_create.py to work you have to mount you ps4 hdd to your pc until i find a workaround to not have 
 to remove the ps4hdd when running the script
 
-but for PS4Linux_DiskImage_maker_without_removeing_PS4HDD.py you just need an diskimage file your ps4 made for that  to work i will show a video down here  when i edit to it can be high res
+but for PS4Linux_DiskImage_maker_without_removeing_PS4HDD.py you just need an diskimage file your ps4 made for that  to work i will show a video down here  when i edit to it can be high res 
 
-also all the ps4linux os that in tar.gz or tar.xz the size need to be 2.94G is the max for it can boot with my script anythong over it will not boot
+but here the text version of that until the video get done
+
+1. so first you run goldhen delete any arch.img or linux.img and delete the tar.xz file in the /user/system/boot 
+
+2. then you run the linux payload then you if you on nazky initramfs run exec install-HDD.sh or 
+
+3. if you using modded warfare initramfs run exec install-linux-hdd.sh 
+
+4. then you unplug your ps4 and boot back to orbis os enable gold hen again 
+
+5. then enable ftp then move the diskimage file your ps4 made in ftp from /user/home then copy that to your pc hdd then run my script  when you config your directory in the code then my script will work  then i use winrar to comepress it then i move it to the ps4 /data
+
+6. then i run the apollo save tool to extract it then i move the linux.img that in the linux filder on /data/linux/ linux.img then i remove  the linux.img in the /user/home 
+
+7. then move the diskimage i extract with apllo  that what i did 
+
+also all the ps4linux os that in tar.gz or tar.xz the size need to be 5.74G is the max for it can boot with my script anythong over it will not boot
 
 I am not responeable for any damage you did to your disk 
 
