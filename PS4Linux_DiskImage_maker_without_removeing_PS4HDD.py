@@ -1,6 +1,6 @@
 #!/bin/python
 
-username = input("Enter you linux User: ") #get input from user
+username = input("Please Enter your linux Username: ") #get input from user
 
 
 print(f"Make sure your diskimage file is in the /home/{username}/psxitarch.tar.xz or tar.gz and /home/{username}/linux.img \n") #print text on the screen
