@@ -3,7 +3,7 @@
 username = input("Enter you linux User: ") #get input from user
 
 
-print(f"Make sure your diskimage file is in the /home/{username}/psxitarch.tar.xz or tar.gz\n") #print text on the screen
+print(f"Make sure your diskimage file is in the /home/{username}/psxitarch.tar.xz or tar.gz and /home/{username}/linux.img \n") #print text on the screen
 
 import os #this is the os mudule from cpython
 
