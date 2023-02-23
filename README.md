@@ -16,13 +16,13 @@ make sure ps4 xplorer homebrew app is install by Lapy05575948 for you to do all 
 
 3. if you using modded warfare initramfs run exec install-linux-hdd.sh 
 
-4. type in your storage amount for example 100 then the initramfs will create your diskimagefile from the ps4
+4. type in your storage amount for example 100 then the initramfs will create your diskimage file from the ps4
 
 4. then you unplug your ps4 and plug it back in and boot back to orbis os enable gold hen again 
 
 5. then enable ftp then move the diskimage file your ps4 made in ftp from /user/home then copy that to your pc hdd then run my sudo python3 PS4Linux_DiskImage_maker_without_removeing_PS4HDD.py script then i use winrar to comepress it havey then i move it to the ps4 /data
 
-6. then i run the apollo save tool to extract it then i move the linux.img that in the linux fiolder on /data/linux/ i cut linux.img or Arch.img then i remove  the linux.img or Arch.img in the /user/home 
+6. then i run the apollo save tool to extract it then i move the linux.img that in the linux fiolder on /data/foldername/ i cut linux.img or Arch.img then i remove  the linux.img or Arch.img in the /user/home 
 
 7. then move the diskimage i extract with apollo to /user/home   that what i did 
 
@@ -36,7 +36,7 @@ for you to get your hdd keys you need python2 and run pip2 install -r requiremen
 
 then move the sflash0 to /home/$USER/Documents    then also move the hdd_script.py to /home/$USER/Documents 
 
-you need to be on a linux os for all these script to work must be run as root
+you need to be on a linux os oe wsl for all these script to work must be run as root
 
 then run python2 hdd_script.py sflash0
 
@@ -100,7 +100,7 @@ if you have any error you get in the script let me know to i can fix it.
 
 this is really the only way i can think  when making hdd .img file from your pc without being in the ps4
 
-Thankes for reading and hope this help make ps4 hdd .img file
+Thankes for reading and hope this help to make ps4 hdd .img file
 
 TODO: 
 
