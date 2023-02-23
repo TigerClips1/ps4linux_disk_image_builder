@@ -88,6 +88,6 @@ disks() #call the function
 
 print("DONE \n")
 
-print(credit) #print the credits on the screen
+print(credit, sep= "\n") #print the credits on the screen
 
 print(promo) #promote ps4linux
