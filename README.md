@@ -22,7 +22,7 @@ make sure ps4 xplorer homebrew app is install by Lapy05575948 for you to do all 
 
 5. then enable ftp then move the diskimage file your ps4 made in ftp from /user/home then copy that to your pc hdd then run my sudo python3 PS4Linux_DiskImage_maker_without_removeing_PS4HDD.py script then i use winrar to comepress it havey then i move it to the ps4 /data
 
-6. then i run the apollo save tool to extract it then i move the linux.img that in the linux fiolder on /data/linux/ i cut linux.img or Arch.img then i remove  the linux.img in the /user/home 
+6. then i run the apollo save tool to extract it then i move the linux.img that in the linux fiolder on /data/linux/ i cut linux.img or Arch.img then i remove  the linux.img or Arch.img in the /user/home 
 
 7. then move the diskimage i extract with apollo   that what i did 
 
