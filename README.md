@@ -18,7 +18,7 @@ make sure ps4 xplorer homebrew app is install by Lapy05575948 for you to do all 
 
 4. then you unplug your ps4 and plug it back in and boot back to orbis os enable gold hen again 
 
-5. then enable ftp then move the diskimage file your ps4 made in ftp from /user/home then copy that to your pc hdd then run my script  when you config your directory in the code then my script will work  then i use winrar to comepress it havey then i move it to the ps4 /data
+5. then enable ftp then move the diskimage file your ps4 made in ftp from /user/home then copy that to your pc hdd then run my sudo python3 PS4Linux_DiskImage_maker_without_removeing_PS4HDD.py script then i use winrar to comepress it havey then i move it to the ps4 /data
 
 6. then i run the apollo save tool to extract it then i move the linux.img that in the linux filder on /data/linux/ i cut linux.img then i remove  the linux.img in the /user/home 
 
