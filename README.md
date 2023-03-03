@@ -1,3 +1,6 @@
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/tigerclips1)
+
+
 ⚠️ Warning this is still in dev and may need to test by other people  because i don't have the tool to take out the ps4 hdd or the seta to usb so if it work please let me know at  TigerClips 2#3277 on discord  ⚠️
 
 
