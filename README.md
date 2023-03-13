@@ -106,7 +106,7 @@ Thankes for reading and hope this help to make ps4 hdd .img file
 
 TODO: 
 
-~~1. add input to you can input  space diskimage file from the python script
+~~1. add input to you can input  space diskimage file from the python script~~
 
 2. fix spelling error in the comments
 
