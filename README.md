@@ -102,6 +102,7 @@ if you have any error you get in the script let me know to i can fix it.
 
 this is really the only way i can think  when making hdd .img file from your pc without being in the ps4
 
+premade diskimage file for the PS4 can be find [here](https://t.co/KODyTHH0MC) - pre made blank diskimage file for Aeolia/Belize
 Thankes for reading and hope this help to make ps4 hdd .img file
 
 TODO: 
