@@ -1,7 +1,8 @@
 #!/bin/python  #make it where you can hit tab it will autofill it
 
 import os #import os muduals for this script to work
-
+username = input("Please Enter your Linux Username: ")
+number = input("Please Enter the number of how much space you want: ")
 print("ps4 drivers require for the os to boot when done installing that then run this script") #reminder
 
 error = "Error you don't have an ubuntu base distro or debian base distro" #error 1 variable string
@@ -14,22 +15,19 @@ credit = "scripts by TigerClips 2" #credit variable string
 
 promo = "ps4linux.com" #promotion variable string
 
-path = "/home/xxxx/Documents"
+path = f"/home/{username}/Documents"
 
-path2 = "/home/xxxxx/Documents/yay"
+
+path2 = f"/home/{username}/Documents/yay"
 
 path3 = "/newroot"
 
-#ubuntu/debian
+archS = "sudo pacman -S git wget wine wine-mono wine-gecko wget"
 
-def ubuntu_debian(): #function to keep thing nice
-        
-        rar = os.popen('sudo apt-get update && sudo apt-get install unrar rar wget cryptmount wget') #command to install the requirements for ubuntu/debian abse distro
-        
-        output = rar.readlines() #output to see if the commands ruturn with no error
-        
-        print (error) #print the error if you try to run that commands say for fedora base distro
+clone = "git clone https://aur.archlinux.org/yay.git"
 
+        
+        
 
 #arch
 
@@ -37,11 +35,11 @@ def arch(): #function to keep thing nice
     
     os.chdir(path)#change directory to that << to we can keep thing nice
     
-    os.system('sudo pacman -S git wget wine wine-mono wine-gecko wget') #this will install the requirement for arch to run this script
+    os.system(archS) #this will install the requirement for arch to run this script
     
     os.chdir(path)
     
-    os.system(' git clone https://aur.archlinux.org/yay.git') #clone aur helper repo
+    os.system(clone) #clone aur helper repo
     
     os.chdir(path2 ) # change directory to aur helper
     
@@ -58,17 +56,17 @@ def disks(): #function to keep thing nice
     
     os.chdir(path)#change directory to that << to we can keep thing nice
     
-    print("this will create a 100G diskimage file\n") #print text on the screen
+    print(f"this will create a {number}G diskimage file\n") #print text on the screen
     
     print("plese close out of everything only thing need to be open is the terminal")
     
-    os.system('sudo cryptsetup -d /home/xxxx/Documents/eap_hdd_key.bin --cipher=aes-xts-plain64 -s 256 --offset=0 --skip=111669149696 create ps4hdd /dev/sda27') #setup ps4 HDD
+    os.system(f'sudo cryptsetup -d /home/{username}/Documents/eap_hdd_key.bin --cipher=aes-xts-plain64 -s 256 --offset=0 --skip=111669149696 create ps4hdd /dev/sda27') #setup ps4 HDD
     
     os.system('sudo mkdir /ps4hdd') #make the directory for the ps4hdd
     
     os.system('sudo mount -t ufs -o ufstype=ufs2 /dev/mapper/ps4hdd /ps4hdd') #mount the ps4 drive from pc to it can work
     
-    os.system('sudo dd if=/dev/null of=/ps4hdd/home/linux.img bs=1073741824 seek=100 status=progress') #start making the diskimage file 
+    os.system(f'sudo dd if=/dev/null of=/ps4hdd/home/linux.img bs=1073741824 seek={number} status=progress') #start making the diskimage file 
     
     os.system('sudo losetup /dev/loop5 /ps4hdd/home/linux.img') #setuop the diskimage file
     
@@ -76,11 +74,11 @@ def disks(): #function to keep thing nice
     
     os.system ('sudo mount /dev/loop5 /newroot')
     
-    os.system ('sudo tar -cvf ps4linux.tar.xz --exclude=/home/xxxxx/Documents/ps4linux.tar.xz --exclude=/var/cache --one-file-system / -I "xz -9" + ') #comepile all files in the root directory to tar.xz to we can run the diskimage file on the ps4
+    os.system (f'sudo tar -cvf ps4linux.tar.xz --exclude=/home/{username}/Documents/ps4linux.tar.xz --exclude=/var/cache --one-file-system / -I "xz -9" + ') #comepile all files in the root directory to tar.xz to we can run the diskimage file on the ps4
     
     os.chdir (path3) #change directory to the diskimage protation
     
-    os.system('sudo tar -xvf /home/xxxx/Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
+    os.system(f'sudo tar -xvf /home/{username}/Documents/ps4linux.tar.xz') #extrect the tar.xz file to the diskimage file
     
     os.chdir (path)
     
