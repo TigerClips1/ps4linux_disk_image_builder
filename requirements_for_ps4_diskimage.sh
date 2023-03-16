@@ -7,6 +7,7 @@ echo "installing python if it not install"
 sudo apt update && sudo apt install python3 python3-pip #installing python3  for debian/ubuntu for my .py script to run
 
 sudo apt-get update && sudo apt-get install unrar rar wget cryptmount wget
+sudo apt-get update && sudo apt-get install wget
 
 #arch
 
