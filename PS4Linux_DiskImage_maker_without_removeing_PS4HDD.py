@@ -14,7 +14,7 @@ ERROR2 = " you don't have a tar.gz file or cant be found" #variable string that 
 
 PATH = f"/home/{USERNAME}/" #variable string
 
-PATH2 = '/newroots' #variable string
+PATH2 = '/PS4' #variable string
 
 CMD3 = f'sudo tar -xvf /home/{USERNAME}/psxitarch.tar.xz' #variable string
 
@@ -28,7 +28,7 @@ PROMO = "ps4linux.com \n" #promotion variable string
 
 CMD4 = f'sudo tar -xvzf /home/{USERNAME}/psxitarch.tar.gz' #extrect tar.gz file
 
-REMOVE = "sudo rm -rf /newroots"
+REMOVE = "sudo rm -rf /PS4"
 
 EXT2 = "sudo mkfs.ext2 /dev/loop5"
 
