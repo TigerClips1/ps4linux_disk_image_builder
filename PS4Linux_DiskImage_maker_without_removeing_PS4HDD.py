@@ -4,7 +4,7 @@ import os #this is the os mudule from cpython
 
 USERNAME = input("Please Enter your linux Username: ") #get input from user
 
-print(f"Make sure your diskimage file is in the /home/{USERNAME}/psxitarch.tar.xz or tar.gz and /home/{username}/linux.img \n") #print text on the screen
+print(f"Make sure your diskimage file is in the /home/{USERNAME}/psxitarch.tar.xz or tar.gz and /home/{USERNAME}/linux.img \n") #print text on the screen
 
 CMD1 = f"sudo losetup /dev/loop5 /home/{USERNAME}/linux.img" #this will excute the command
 
@@ -14,7 +14,7 @@ ERROR2 = " you don't have a tar.gz file or cant be found" #variable string that 
 
 PATH = f"/home/{USERNAME}/" #variable string
 
-PATH2 = '/newroot' #variable string
+PATH2 = '/newroots' #variable string
 
 CMD3 = f'sudo tar -xvf /home/{USERNAME}/psxitarch.tar.xz' #variable string
 
@@ -22,23 +22,21 @@ PATH3 = f"/home/{USERNAME}/Documents" #variable string
 
 ERROR3 = "you don't have an arch base distro" #variable string
 
-ERROR4 = "you not on a debian base distro or on an ubuntu base distro" #variable string
-
 CREDIT = "scripts by TigerClips 2 \n" #credit variable string
 
 PROMO = "ps4linux.com \n" #promotion variable string
 
 CMD4 = f'sudo tar -xvzf /home/{USERNAME}/psxitarch.tar.gz' #extrect tar.gz file
 
-REMOVE = "sudo rm -rf /newroot"
+REMOVE = "sudo rm -rf /newroots"
 
 EXT2 = "sudo mkfs.ext2 /dev/loop5"
 
-MAKE = "sudo mkdir /newroot"
+MAKE = "sudo mkdir /PS4"
 
 ARCH = "sudo pacman -Syy && sudo pacman -S wget && sudo pacman -R snapd"
 
-MOUNT = "sudo mount /dev/loop5 /newroot"
+MOUNT = "sudo mount /dev/loop5 /PS4"
 
 REMOVE_NEWROOT = "sudo rm -rf *"
 
@@ -56,13 +54,16 @@ print("Installing\n")
 
 def disks(): #function to keep thing nice
     os.chdir(PATH) #change the os directory
+    if disks:
+        os.system(CMD1) #function
     
-    setup = os.popen(CMD1) #function
+    else:
     
-    output = setup.readlines() #this will read and see you have the linux.img file
+     print(ERROR) #print an error if it can't find the linux.img
     
-    print(ERROR) #print an error if it can't find the linux.img
+    
     os.system(REMOVE) #this will remove the /newroot directory to when installing the os you want have your screen flashing
+    
     os.system(EXT2) #make filesystem to ext2
     
     os.system(MAKE) #make a directory
@@ -72,22 +73,21 @@ def disks(): #function to keep thing nice
     os.chdir(PATH2) #change the os directory
     
     os.system(REMOVE_NEWROOT) #remove the lost+found folder in the diskimage file
-    
-    os.system(CMD3) #extrect tar.xz files
-    
-    extrect = os.popen(CMD4) #extrect tar.gz file
-    
-    output2 = extrect.readlines() #see if it can find a tar.gz file
-    
-    print(ERROR2) #print an error if it cant find a tar.gz file
+    if disks:
+        
+        os.system(CMD3) #extrect tar.xz files
+    else:
+        print("we can't find an tar.xz")
+    if disks:
+        os.system(CMD4) #extrect tar.gz file
+    else:    
+        print(ERROR2) #print an error if it cant find a tar.gz file
     
     os.chdir(PATH3)#change the os directory
-    
-    wget = os.popen(ARCH) #function
-    
-    output3 = wget.readlines() #this will read and see you have that command on your pc
-    
-    print(ERROR3) #print error 3 on your screen if you don't have an arch base distro
+    if disks:
+        os.system(ARCH) #function
+    else:
+        print(ERROR3) #print error 3 on your screen if you don't have an arch base distro
     
     os.chdir(PATH3) #change the os directory
     
