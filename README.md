@@ -93,7 +93,7 @@ arch drivers by nazky can be found [here](https://github.com/Hakkuraifu/PS4Linux
 that's it there may be alot of spelling errors in here but i will fix that  in a later update
 
 also for  you to get bluetooth to work /wifi for some ps4 downlaods this [kernel](https://ps4linux.com/s/rxzab) -to fix that
-
+[pre made diskimage file](https://drive.google.com/file/d/10vsFHzeZVCuroh8SKLMplKNAkqfcWi4U/view?usp=sharing) - here some premade diskimage i made to you don't have to remove the PS4HDD enjoy
 
 
 this is still a work in progress so you may need to test it
