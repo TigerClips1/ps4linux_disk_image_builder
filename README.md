@@ -102,12 +102,14 @@ if you have any error you get in the script let me know to i can fix it.
 this is really the only way i can think  when making hdd .img file from your pc without being in the ps4
 
 premade diskimage file for the PS4 can be find [here](https://t.co/KODyTHH0MC) - pre made blank diskimage file for Aeolia/Belize
-Thankes for reading and hope this help to make ps4 hdd .img file
+also a tip if you want to make tar.gz file like the psxita team then here what command they run cd / then run sudo tar -cvzf psxitarch.tar.gz --exclude=/psxitarch.tar.gz --exclude=/var/cache --one-file-system / or use  doas tar -cvzf psxitarch.tar.gz --exclude=/psxitarch.tar.gz --exclude=/var/cache --one-file-system / 
+after you do that you will have a working tar.gz that run the PS4 that easy
+Thankes for reading and hope this help to make ps4 hdd diskimage file from your PC without using the slow PS4
 
 TODO: 
 
-~~1. add input to you can input  space diskimage file from the python script~~
-
-1. fix spelling error in the comments
-
-
+~~1. add input to you can input  space diskimage file from the python script.~~
+~~2. fix spelling error in the comments.~~
+1. add Ftp and a progress bar to the.
+2. make the code easy to read and understand.
+3. Make the 2 python script support windows 10/11 command interface.
