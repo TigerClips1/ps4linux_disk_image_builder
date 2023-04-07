@@ -110,12 +110,12 @@ Thankes for reading and hope this help to make ps4 hdd diskimage file from your 
 
 TODO: 
 
-~~1. add input to you can input  space diskimage file from the python script.~~
+~~  1. add input to you can input  space diskimage file from the python script.~~
 
-~~2. fix spelling error in the comments.~~
+~~  2. fix spelling error in the comments.~~
 
-3. add Ftp and a progress bar to the.
+    3. add Ftp and a progress bar to the.
 
-4. make the code easy to read and understand.
+    4. make the code easy to read and understand.
 
-5. Make the 2 python script support windows 10/11 command interface.
+    5. Make the 2 python script support windows 10/11 command interface.
