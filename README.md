@@ -109,13 +109,9 @@ after you do that you will have a working tar.gz that run the PS4 that easy
 Thankes for reading and hope this help to make ps4 hdd diskimage file from your PC without using the slow PS4
 
 TODO: 
+    
+    1. add Ftp and a progress bar to the.
 
-~~  1. add input to you can input  space diskimage file from the python script.~~
+    2. make the code easy to read and understand.
 
-~~  2. fix spelling error in the comments.~~
-
-    3. add Ftp and a progress bar to the.
-
-    4. make the code easy to read and understand.
-
-    5. Make the 2 python script support windows 10/11 command interface.
+    3. Make the 2 python script support windows 10/11 command interface.
