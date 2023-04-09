@@ -57,7 +57,7 @@ then take out your ps4 hdd and plug it in to your pc make sure you buy this [to]
 
 vm and make sure you call the ps4 hdd in the vm then install ps4 drivers to the os in vm then run python3 
 
-ps4linux_diskimage_create.py if you have the ps4 hdd connect to yourr pc then it will create a diskimage file in the ps4hdd from 
+ps4linux_diskimage_create.py if you have the ps4 hdd connect to your pc then it will create a diskimage file in the ps4hdd from 
 
 your pc without being in the ps4
 
@@ -66,7 +66,7 @@ for you to run the os you need to have ps4 drivers
 look at this guide when making a rar file using the gui for linux to make sure you check the right [box](https://www.quora.com/How-do-I-highly-compress-files-using-winrar)
 
 make sure the dirctory size is  1MB to it can be comepress vary small
-![example1](https://github.com/TigerClips1/ps4linux_disk_image_maker/blob/master/example.png)
+![example1](https://github.com/TigerClips1/ps4linux_disk_image_maker/blob/master/Images/example.png)
 
 but there is  a image that show you how to set it up
 
@@ -107,11 +107,3 @@ doas tar -cvzf psxitarch.tar.gz --exclude=/psxitarch.tar.gz --exclude=/var/cache
 after you do that you will have a working tar.gz that run the PS4 that easy
 
 Thankes for reading and hope this help to make ps4 hdd diskimage file from your PC without using the slow PS4
-
-TODO: 
-    
-    1. add Ftp and a progress bar to the.
-
-    2. make the code easy to read and understand.
-
-    3. Make the 2 python script support windows 10/11 command interface.
