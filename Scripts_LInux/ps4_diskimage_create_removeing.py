@@ -1,6 +1,6 @@
 
 #Dont run this run the other script if you on linux until i get a seta to usb to test the script MAC coming SOON
-CMD = "sudo python3 PS4Linux_DiskImage without removeing.py"
+CMD = "sudo python3 PS4Linux_DiskImage_without_removeing.py"
 os.system(CMD)
 
 
