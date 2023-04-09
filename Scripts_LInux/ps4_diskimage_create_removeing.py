@@ -1,12 +1,8 @@
+#!/bin/python  #make it where you can hit tab it will autofill it
 
 #Dont run this run the other script if you on linux until i get a seta to usb to test the script MAC coming SOON
 CMD = "sudo python3 PS4Linux_DiskImage_without_removeing.py"
 os.system(CMD)
-
-
-#!/bin/python  #make it where you can hit tab it will autofill it
-
-
 
 #import os #import os muduals for this script to work
 
