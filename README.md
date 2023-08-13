@@ -106,4 +106,7 @@ doas tar -cvzf psxitarch.tar.gz --exclude=/psxitarch.tar.gz --exclude=/var/cache
 
 after you do that you will have a working tar.gz that run the PS4 that easy
 
+CopyRight TigerClips1 ©2023 All Rights Reserved
+CopyRight SonyEntertainment ©1999-2023 All Rights Reserved
+CopyRight  zecoxao  for the hdd_script.py ©2020-2023 All Rights Reserved 
 Thankes for reading and hope this help to make ps4 hdd diskimage file from your PC without using the slow PS4
