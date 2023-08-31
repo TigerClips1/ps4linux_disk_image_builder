@@ -72,7 +72,7 @@ but there is  a image that show you how to set it up
 
 ad check out ps4linux.com for the latest news about ps4linux
 
-if you have any isuse i will be on discord TigerClips 2#3277
+if you have any isuse i will be on discord tigerclips 2
 
 1. you run the  requirements_for_ps4_diskimage.sh to install python3-pip for arch and ubuntu/debian
 python3 is what require for you to run my python script
