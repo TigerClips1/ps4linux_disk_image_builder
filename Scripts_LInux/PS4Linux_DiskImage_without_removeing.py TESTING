@@ -69,7 +69,7 @@ class SetupLinux:
         #let the USer know that it done
         done = "sudo  umount /dev/loop5"
         #install winrar windows gui for linux if you have wine install
-        rar_link = "wget https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-621.exe"
+        rar_link = "wget https://www.rarlab.com/rar/winrar-x64-624.exe"
         rename = "sudo mv winrar-x64-621.exe winrar.exe"
         open = "wine winrar.exe"
 #credit the author
