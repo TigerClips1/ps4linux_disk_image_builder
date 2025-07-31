@@ -1,2 +1,4 @@
+
 pycrypto
+binascii
 #progressbar #add  this in anther update
