@@ -35,13 +35,13 @@ I am not responeable for any damage you did to your disk
 
 for this script to work you need to get your sfalsh fellow this guide that show you how to get your sflash0 from [ftp](https://florinsdistortedvision.github.io/orbisunjailed/sflash-backup/)
 
-for you to get your hdd keys you need python2 and run pip2 install -r requirements.txt
+for you to get your hdd keys you need python3 and run pip3 install -r requirements.txt
 
 then move the sflash0 to /home/$USER/Documents    then also move the hdd_script.py to /home/$USER/Documents 
 
 you need to be on a linux os oe wsl for all these script to work must be run as root
 
-then run python2 hdd_script.py sflash0
+then run python3 hdd_script.py sflash0
 
 you need to mount the ps4 hdd fellow this [guide](https://www.psdevwiki.com/ps4/Mounting_HDD_in_Linux) - and you need to take note of 
 
